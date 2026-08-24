@@ -113,7 +113,7 @@ function SplitHero({ result, accent }: { result: PreviewResult; accent: Accent }
     <div className="grid gap-6 px-5 py-10 sm:grid-cols-[1.2fr_0.8fr] sm:items-center sm:px-8 sm:py-14">
       <div>
         <TagBadge result={result} accent={accent} />
-        <h3 className="mt-4 text-balance text-2xl font-extrabold leading-tight text-slate-900 sm:text-3xl">
+        <h3 className="mt-4 text-balance text-2xl font-bold leading-tight text-slate-900 sm:text-3xl">
           {result.heroHeadline}
         </h3>
         <p className="mt-3 max-w-sm text-sm leading-relaxed text-slate-500">
@@ -149,7 +149,7 @@ function CenteredHero({ result, accent }: { result: PreviewResult; accent: Accen
       <div className="mt-5 flex justify-center">
         <TagBadge result={result} accent={accent} />
       </div>
-      <h3 className="mx-auto mt-4 max-w-lg text-balance text-2xl font-extrabold leading-tight text-slate-900 sm:text-3xl">
+      <h3 className="mx-auto mt-4 max-w-lg text-balance text-2xl font-bold leading-tight text-slate-900 sm:text-3xl">
         {result.heroHeadline}
       </h3>
       <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-slate-500">
@@ -173,7 +173,7 @@ function StackedHero({ result, accent }: { result: PreviewResult; accent: Accent
         <p className="mt-4 font-mono text-[10px] font-bold uppercase tracking-widest text-white/80">
           {result.tagline}
         </p>
-        <h3 className="mx-auto mt-2 max-w-lg text-balance text-2xl font-extrabold leading-tight text-white sm:text-3xl">
+        <h3 className="mx-auto mt-2 max-w-lg text-balance text-2xl font-bold leading-tight text-white sm:text-3xl">
           {result.heroHeadline}
         </h3>
       </div>
@@ -286,10 +286,10 @@ export function PreviewGenerator() {
       className="border-y border-white/5 bg-panel/30 px-5 py-20 sm:px-8 sm:py-28"
     >
       <div className="mx-auto max-w-2xl text-center">
-        <p className="mb-3 font-mono text-xs uppercase tracking-[0.3em] text-cyan">
+        <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-cyan">
           Experimente
         </p>
-        <h2 className="font-display text-3xl font-extrabold tracking-tight text-paper sm:text-4xl">
+        <h2 className="font-display text-3xl font-bold tracking-tight text-paper sm:text-4xl">
           <span className="bg-[linear-gradient(110deg,#8B5CF6_0%,#4F6BFF_55%,#3FD0E0_100%)] bg-clip-text text-transparent">
             E se
           </span>{" "}

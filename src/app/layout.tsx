@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Syne, Inter, JetBrains_Mono } from "next/font/google";
+import { Manrope, Inter, JetBrains_Mono } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { SITE_NAME, SITE_URL } from "@/lib/config";
 import "./globals.css";
 
-const syne = Syne({
-  variable: "--font-syne",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
-  weight: ["700", "800"],
+  weight: ["600", "700", "800"],
 });
 
 const inter = Inter({
@@ -66,7 +66,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="pt-BR"
-      className={`${syne.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+      className={`${manrope.variable} ${inter.variable} ${jetbrainsMono.variable}`}
     >
       <body className="min-h-screen bg-ink font-sans text-paper antialiased">
         <Header />

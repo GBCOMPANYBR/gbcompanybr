@@ -9,7 +9,7 @@
   --color-mist: #a9a6cc;
   --color-paper: #f5f4fb;
 
-  --font-display: var(--font-syne), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
 }

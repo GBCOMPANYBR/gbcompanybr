@@ -25,10 +25,10 @@ export function HowItWorks() {
   return (
     <section id="como-funciona" className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
       <Reveal>
-        <p className="mb-3 font-mono text-xs uppercase tracking-[0.3em] text-cyan">
+        <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-cyan">
           Como funciona
         </p>
-        <h2 className="max-w-xl font-display text-3xl font-extrabold tracking-tight text-paper sm:text-4xl">
+        <h2 className="max-w-xl font-display text-3xl font-bold tracking-tight text-paper sm:text-4xl">
           Da ideia ao ar, em três passos
         </h2>
       </Reveal>

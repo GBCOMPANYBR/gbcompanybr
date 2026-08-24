@@ -75,7 +75,7 @@ function CaseCard({ featuredCase }: { featuredCase: FeaturedCase }) {
         <span className="mb-3 inline-flex w-fit items-center gap-1.5 rounded-full border border-cyan/30 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-cyan">
           Primeiro negócio estruturado
         </span>
-        <h3 className="font-display text-2xl font-extrabold text-paper">
+        <h3 className="font-display text-2xl font-bold text-paper">
           {featuredCase.name}
         </h3>
         <p className="mt-1 font-mono text-xs uppercase tracking-widest text-mist/70">
@@ -99,10 +99,10 @@ export function SocialProof() {
   return (
     <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
       <Reveal>
-        <p className="mb-3 font-mono text-xs uppercase tracking-[0.3em] text-cyan">
+        <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-cyan">
           Prova social
         </p>
-        <h2 className="max-w-xl font-display text-3xl font-extrabold tracking-tight text-paper sm:text-4xl">
+        <h2 className="max-w-xl font-display text-3xl font-bold tracking-tight text-paper sm:text-4xl">
           Quem já está estruturando com a GB
         </h2>
       </Reveal>

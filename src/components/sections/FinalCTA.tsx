@@ -10,7 +10,7 @@ export function FinalCTA() {
       />
       <div className="relative mx-auto max-w-3xl px-5 py-24 text-center sm:px-8 sm:py-28">
         <Reveal>
-          <h2 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-paper sm:text-4xl md:text-5xl">
+          <h2 className="font-display text-3xl font-bold leading-tight tracking-tight text-paper sm:text-4xl md:text-5xl">
             Sua ideia já esperou demais.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-mist">

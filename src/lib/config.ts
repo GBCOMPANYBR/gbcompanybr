@@ -3,8 +3,7 @@
  * before launch lives in this one file — see README.md.
  */
 
-// TODO: trocar pelo número real, formato internacional só com dígitos (DDI+DDD+número)
-export const WHATSAPP_NUMBER = "5511999999999";
+export const WHATSAPP_NUMBER = "5527999723343";
 
 export const WHATSAPP_MESSAGES = {
   default:

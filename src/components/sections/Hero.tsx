@@ -16,11 +16,11 @@ export function Hero() {
       <div className="relative mx-auto flex max-w-4xl flex-col items-center px-5 text-center sm:px-8">
         <GBSymbolAnimated className="mb-8 h-16 w-16 sm:h-20 sm:w-20" />
 
-        <p className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-cyan">
+        <p className="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-cyan">
           GB Company // {SITE_TAGLINE}
         </p>
 
-        <h1 className="font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-paper sm:text-5xl md:text-6xl">
+        <h1 className="font-display text-4xl font-bold leading-[1.08] tracking-tight text-paper sm:text-5xl md:text-6xl">
           Você tem a ideia.
           <br />A gente entrega a empresa.
         </h1>
