@@ -1,0 +1,17 @@
+<svg width="144" height="120" viewBox="0 0 144 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gbGradFavicon" x1="10" y1="10" x2="140" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="55%" stop-color="#4F6BFF"/>
+      <stop offset="100%" stop-color="#3FD0E0"/>
+    </linearGradient>
+  </defs>
+  <rect width="144" height="120" rx="28" fill="#0A0A17"/>
+  <g transform="translate(6 0)">
+    <path d="M76 38 A28 28 0 1 0 76 82" stroke="url(#gbGradFavicon)" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <path d="M58 60 L76 60" stroke="url(#gbGradFavicon)" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <path d="M76 28 V92" stroke="url(#gbGradFavicon)" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <path d="M76 28 H88 A16 16 0 0 1 88 60 H76" stroke="url(#gbGradFavicon)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M76 60 H92 A16 16 0 0 1 92 92 H76" stroke="url(#gbGradFavicon)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>
