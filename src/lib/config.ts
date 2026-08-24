@@ -23,6 +23,8 @@ export const SITE_URL = "https://gbcompanybr.com.br";
 export const SITE_NAME = "GB Company";
 export const SITE_TAGLINE = "E se...";
 
+export const CONTACT_EMAIL = "contato@gbcompanybr.com.br";
+
 // @gbcompanybr é o handle oficial da marca (confirmado livre em 2026-08-22,
 // pareado com o domínio gbcompanybr.com.br). Este link já funciona assim que
 // a conta for criada — não precisa trocar nada aqui depois.

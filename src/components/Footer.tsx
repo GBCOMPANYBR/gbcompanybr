@@ -1,5 +1,11 @@
 import { GBSymbol } from "@/components/icons/GBSymbol";
-import { CNPJ_PLACEHOLDER, SITE_NAME, SITE_TAGLINE, SOCIAL_LINKS } from "@/lib/config";
+import {
+  CNPJ_PLACEHOLDER,
+  CONTACT_EMAIL,
+  SITE_NAME,
+  SITE_TAGLINE,
+  SOCIAL_LINKS,
+} from "@/lib/config";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -27,6 +33,12 @@ export function Footer() {
             className="transition-colors hover:text-cyan"
           >
             Instagram
+          </a>
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="transition-colors hover:text-cyan"
+          >
+            {CONTACT_EMAIL}
           </a>
           <p className="font-mono text-xs text-mist/70">
             CNPJ {CNPJ_PLACEHOLDER}
