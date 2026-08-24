@@ -16,10 +16,8 @@ export function buildWhatsAppUrl(
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
-// Confirmado disponível via RDAP em registro.br em 2026-08-22 — registrar
-// antes que alguém pegue. Domínios .com.br não têm "grace period" público
-// como .com, então isso pode virar indisponível a qualquer momento até o
-// registro ser feito.
+// Domínio oficial, comprado na Hostinger em 2026-08-24 e conectado ao
+// projeto na Vercel (DNS apontando pra 76.76.21.21).
 export const SITE_URL = "https://gbcompanybr.com.br";
 
 export const SITE_NAME = "GB Company";
