@@ -27,16 +27,54 @@ export default function OpengraphImage() {
             gap: 24,
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              width: 88,
-              height: 88,
-              borderRadius: 20,
-              backgroundImage:
-                "linear-gradient(110deg, #8B5CF6 0%, #4F6BFF 55%, #3FD0E0 100%)",
-            }}
-          />
+          <svg width={96} height={80} viewBox="20 14 110 92" fill="none">
+            <defs>
+              <linearGradient
+                id="gbGradOg"
+                x1="10"
+                y1="10"
+                x2="140"
+                y2="110"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0%" stopColor="#8B5CF6" />
+                <stop offset="55%" stopColor="#4F6BFF" />
+                <stop offset="100%" stopColor="#3FD0E0" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M76 38 A28 28 0 1 0 76 82"
+              stroke="url(#gbGradOg)"
+              strokeWidth={9}
+              strokeLinecap="round"
+            />
+            <path
+              d="M58 60 L76 60"
+              stroke="url(#gbGradOg)"
+              strokeWidth={9}
+              strokeLinecap="round"
+            />
+            <path
+              d="M76 28 V92"
+              stroke="url(#gbGradOg)"
+              strokeWidth={9}
+              strokeLinecap="round"
+            />
+            <path
+              d="M76 28 H88 A16 16 0 0 1 88 60 H76"
+              stroke="url(#gbGradOg)"
+              strokeWidth={9}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M76 60 H92 A16 16 0 0 1 92 92 H76"
+              stroke="url(#gbGradOg)"
+              strokeWidth={9}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
           <div style={{ display: "flex", fontSize: 76, fontWeight: 800, color: "#F5F4FB" }}>
             GB Company
           </div>
