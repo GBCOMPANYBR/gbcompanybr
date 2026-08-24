@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import { GBSymbol } from "@/components/icons/GBSymbol";
+import { InstagramGlyph } from "@/components/icons/InstagramGlyph";
 import { WhatsAppLink } from "@/components/WhatsAppLink";
+import { SOCIAL_LINKS } from "@/lib/config";
 
 const NAV_LINKS = [
   { href: "#como-funciona", label: "Como funciona" },
@@ -45,6 +47,15 @@ export function Header() {
             className="inline-flex items-center rounded-full border border-cyan/40 px-4 py-2 font-display text-xs font-extrabold uppercase tracking-wide text-cyan transition-colors hover:border-cyan hover:bg-cyan/10"
           >
             E se
+          </a>
+          <a
+            href={SOCIAL_LINKS.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GB Company no Instagram"
+            className="flex h-9 w-9 items-center justify-center rounded-full text-mist transition-colors hover:text-cyan"
+          >
+            <InstagramGlyph className="h-5 w-5" />
           </a>
           <WhatsAppLink variant="secondary" size="sm">
             Falar no WhatsApp
@@ -97,6 +108,16 @@ export function Header() {
               className="text-base font-medium text-cyan transition-colors hover:text-paper"
             >
               E se
+            </a>
+            <a
+              href={SOCIAL_LINKS.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="flex items-center gap-2 text-base font-medium text-mist transition-colors hover:text-paper"
+            >
+              <InstagramGlyph className="h-5 w-5" />
+              Instagram
             </a>
           </nav>
           <WhatsAppLink className="mt-5 w-full">
