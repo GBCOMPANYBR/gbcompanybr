@@ -3,7 +3,7 @@
  * before launch lives in this one file — see README.md.
  */
 
-export const WHATSAPP_NUMBER = "5527999723343";
+export const WHATSAPP_NUMBER = "5511972783513";
 
 export const WHATSAPP_MESSAGES = {
   default:
