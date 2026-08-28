@@ -69,6 +69,27 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${manrope.variable} ${inter.variable} ${jetbrainsMono.variable}`}
     >
       <body className="min-h-screen bg-ink font-sans text-paper antialiased">
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              name: SITE_NAME,
+              url: SITE_URL,
+              description,
+              areaServed: "BR",
+              contactPoint: {
+                "@type": "ContactPoint",
+                contactType: "customer service",
+                telephone: "+5511972783513",
+                availableLanguage: "Portuguese",
+              },
+              sameAs: ["https://instagram.com/gbcompanybr"],
+            }),
+          }}
+        />
         <Header />
         <main>{children}</main>
         <Footer />
