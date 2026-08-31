@@ -87,6 +87,19 @@ function CaseCard({ featuredCase }: { featuredCase: FeaturedCase }) {
         <span className="mt-5 inline-flex w-fit items-center gap-2 rounded-full border border-mist/30 px-3 py-1 text-xs text-mist">
           <span className="h-1.5 w-1.5 rounded-full bg-cyan" />
           {featuredCase.status}
+          {featuredCase.status === "No ar" && featuredCase.url && (
+            <>
+              <span className="text-mist/30">·</span>
+              <a
+                href={`https://${featuredCase.url}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan underline-offset-2 hover:underline"
+              >
+                {featuredCase.url}
+              </a>
+            </>
+          )}
         </span>
       </div>
     </div>

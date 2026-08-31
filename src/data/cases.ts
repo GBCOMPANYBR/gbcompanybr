@@ -4,6 +4,7 @@ export type FeaturedCase = {
   tagline: string;
   description: string;
   status: "Em construção" | "No ar";
+  url?: string;
   imageSrc: string;
   imageAlt: string;
 };
@@ -16,6 +17,7 @@ export const FEATURED_CASES: FeaturedCase[] = [
     description:
       "Marketplace com conferência física e verificação de identidade: quem vende tem a oportunidade, quem compra tem a garantia de que o produto existe e chega de verdade.",
     status: "No ar",
+    url: "oandrezinho.com.br",
     imageSrc: "/cases/andrezinho.jpg",
     imageAlt: "Logo do marketplace Andrezinho",
   },
@@ -36,6 +38,7 @@ export const FEATURED_CASES: FeaturedCase[] = [
     description:
       "Site institucional para distribuidora de bebidas na zona leste de São Paulo — atacado e varejo, catálogo por categoria e pedido direto pelo WhatsApp.",
     status: "No ar",
+    url: "distribuidorafive.com.br",
     imageSrc: "/cases/five-bebidas.jpg",
     imageAlt: "Logo da Five Distribuidora de Bebidas",
   },
