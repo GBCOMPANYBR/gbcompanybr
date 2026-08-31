@@ -73,7 +73,7 @@ function CaseCard({ featuredCase }: { featuredCase: FeaturedCase }) {
       </div>
       <div className="flex flex-1 flex-col justify-center p-7 sm:p-8">
         <span className="mb-3 inline-flex w-fit items-center gap-1.5 rounded-full border border-cyan/30 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-cyan">
-          Primeiro negócio estruturado
+          {featuredCase.badge}
         </span>
         <h3 className="font-display text-2xl font-bold text-paper">
           {featuredCase.name}

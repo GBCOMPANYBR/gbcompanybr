@@ -1,5 +1,6 @@
 export type FeaturedCase = {
   name: string;
+  badge: string;
   tagline: string;
   description: string;
   status: "Em construção" | "No ar";
@@ -7,16 +8,35 @@ export type FeaturedCase = {
   imageAlt: string;
 };
 
-// Primeiro negócio estruturado pela GB Company. Atualize `status` para
-// "No ar" e adicione um link quando o site do Andrezinho for publicado.
 export const FEATURED_CASES: FeaturedCase[] = [
   {
     name: "Andrezinho",
+    badge: "Primeiro negócio estruturado",
     tagline: "Preço de oportunidade. Negócio de verdade.",
     description:
       "Marketplace com conferência física e verificação de identidade: quem vende tem a oportunidade, quem compra tem a garantia de que o produto existe e chega de verdade.",
-    status: "Em construção",
+    status: "No ar",
     imageSrc: "/cases/andrezinho.jpg",
     imageAlt: "Andrezinho, à frente do marketplace que leva o nome dele",
+  },
+  {
+    name: "iMetal",
+    badge: "Sistema sob medida",
+    tagline: "Gestão de pedidos, do papel pro sistema.",
+    description:
+      "Sistema de back-office para controlar pedidos, clientes e importações — dados reais em produção, substituindo planilha por um painel de verdade.",
+    status: "No ar",
+    imageSrc: "/cases/imetal.jpg",
+    imageAlt: "Tela de login do sistema de gestão de pedidos da iMetal",
+  },
+  {
+    name: "Five Distribuidora",
+    badge: "Site institucional",
+    tagline: "Da caixa fechada à garrafa avulsa.",
+    description:
+      "Site institucional para distribuidora de bebidas na zona leste de São Paulo — atacado e varejo, catálogo por categoria e pedido direto pelo WhatsApp.",
+    status: "No ar",
+    imageSrc: "/cases/five-bebidas.jpg",
+    imageAlt: "Página inicial do site da Five Distribuidora de Bebidas",
   },
 ];
