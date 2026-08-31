@@ -211,6 +211,57 @@ function FeaturesRow({ result, accent }: { result: PreviewResult; accent: Accent
   );
 }
 
+const O_QUE_A_GB_CUIDA = [
+  {
+    emoji: "🏢",
+    title: "CNPJ, do zero ao registrado",
+    desc: "Abertura, junta comercial, contabilidade.",
+  },
+  {
+    emoji: "📣",
+    title: "Vendas, marketing e publicidade",
+    desc: "Sistema de vendas, propaganda e campanha no ar.",
+  },
+  {
+    emoji: "🤝",
+    title: "Time comercial e treinamento",
+    desc: "Gente pronta pra vender, não só site bonito.",
+  },
+] as const;
+
+function OQueVemDepoisDoSite() {
+  return (
+    <div className="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-panel/60 shadow-xl">
+      <div className="border-b border-white/5 bg-[linear-gradient(110deg,rgba(139,92,246,0.18)_0%,rgba(79,107,255,0.14)_55%,rgba(63,208,224,0.14)_100%)] px-6 py-5 text-center">
+        <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-cyan">
+          O site acima é só a ponta
+        </p>
+        <p className="mt-1.5 font-display text-base font-bold text-paper sm:text-lg">
+          A gente estrutura o negócio inteiro, não só a tela
+        </p>
+      </div>
+      <div className="grid grid-cols-1 divide-y divide-white/5 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+        {O_QUE_A_GB_CUIDA.map((item) => (
+          <div
+            key={item.title}
+            className="flex flex-col items-center gap-2.5 px-6 py-7 text-center"
+          >
+            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[linear-gradient(110deg,#8B5CF6_0%,#4F6BFF_55%,#3FD0E0_100%)] text-2xl">
+              {item.emoji}
+            </span>
+            <p className="font-display text-sm font-bold text-paper">{item.title}</p>
+            <p className="max-w-[18ch] text-xs leading-relaxed text-mist">{item.desc}</p>
+            <span className="mt-1 inline-flex items-center gap-1.5 rounded-full bg-cyan/10 px-2.5 py-1 font-mono text-[9px] font-bold uppercase tracking-widest text-cyan">
+              <span className="h-1.5 w-1.5 rounded-full bg-cyan" />
+              A gente cuida
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function PreviewCard({ result }: { result: PreviewResult }) {
   const accent = VIBE_PALETTE[result.vibe] ?? VIBE_PALETTE.cool;
   const Hero = HERO_BY_LAYOUT[result.layout] ?? SplitHero;
@@ -329,6 +380,7 @@ export function PreviewGenerator() {
       {result && (
         <div className="mx-auto mt-10 max-w-3xl">
           <PreviewCard result={result} />
+          <OQueVemDepoisDoSite />
           <div className="mt-8 text-center">
             <p className="mx-auto mb-4 max-w-md text-mist">
               {limitReached
