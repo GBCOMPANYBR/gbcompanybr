@@ -17,7 +17,7 @@ export const FEATURED_CASES: FeaturedCase[] = [
       "Marketplace com conferência física e verificação de identidade: quem vende tem a oportunidade, quem compra tem a garantia de que o produto existe e chega de verdade.",
     status: "No ar",
     imageSrc: "/cases/andrezinho.jpg",
-    imageAlt: "Andrezinho, à frente do marketplace que leva o nome dele",
+    imageAlt: "Logo do marketplace Andrezinho",
   },
   {
     name: "iMetal",
@@ -27,7 +27,7 @@ export const FEATURED_CASES: FeaturedCase[] = [
       "Sistema de back-office para controlar pedidos, clientes e importações — dados reais em produção, substituindo planilha por um painel de verdade.",
     status: "No ar",
     imageSrc: "/cases/imetal.jpg",
-    imageAlt: "Tela de login do sistema de gestão de pedidos da iMetal",
+    imageAlt: "Logo da iMetal",
   },
   {
     name: "Five Distribuidora",
@@ -37,6 +37,6 @@ export const FEATURED_CASES: FeaturedCase[] = [
       "Site institucional para distribuidora de bebidas na zona leste de São Paulo — atacado e varejo, catálogo por categoria e pedido direto pelo WhatsApp.",
     status: "No ar",
     imageSrc: "/cases/five-bebidas.jpg",
-    imageAlt: "Página inicial do site da Five Distribuidora de Bebidas",
+    imageAlt: "Logo da Five Distribuidora de Bebidas",
   },
 ];
