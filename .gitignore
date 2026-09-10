@@ -40,6 +40,11 @@ yarn-error.log*
 # claude code (internal session state)
 .claude/
 
+# contratos preenchidos com dados reais (CPF, RG, endereço) — nunca vão pro
+# repositório público. Só o template em contratos/*.md com placeholders é
+# versionado; a versão preenchida fica local, em contratos/preenchidos/.
+contratos/preenchidos/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
